@@ -2,8 +2,7 @@ package Mentoring;
 
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class JavaMentoringPrac {
 
@@ -174,6 +173,18 @@ public class JavaMentoringPrac {
             }
         }
         System.out.println(hasvowels);
+    }
+    @Test
+    public void removeDuplicates(){
+        int[]numbers={1,2,3,7,7,5,6,7,8,9,11,13};
+
+        List<Integer> arrayList = new ArrayList<>();
+        for(int number: numbers){
+            arrayList.add(number);
+        }
+
+        Set<Integer> set = new HashSet<>(arrayList);
+        System.out.println(set);
     }
 
 
